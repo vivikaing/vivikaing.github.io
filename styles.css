@@ -1,0 +1,95 @@
+:root {
+  --text: #222;
+  --muted: #666;
+  --bg: #ffffff;
+  --menu-hover: #f1f1f1;
+  --menu-active-bg: #2f2f33;
+  --menu-active-text: #ffffff;
+  --border: #dddddd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  line-height: 1.65;
+}
+
+.container {
+  max-width: 980px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+/* Top navigation */
+.menu {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  background: var(--menu-hover);
+}
+
+.menu a.active {
+  background: var(--menu-active-bg);
+  color: var(--menu-active-text);
+}
+
+/* Home layout */
+.home-layout {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.profile-pic {
+  width: 180px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+/* Generic content page */
+.page-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* Publications list style */
+.pub-list {
+  padding-left: 20px;
+}
+
+.pub-list li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 760px) {
+  .home-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-pic {
+    width: 160px;
+  }
+}
