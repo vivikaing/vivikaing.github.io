@@ -107,6 +107,57 @@ h1 {
 
 .muted { color: var(--muted); margin-top: 0; }
 
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0 0;
+  display: grid;
+  gap: 12px;
+}
+
+.project-item {
+  border-bottom: 1px solid var(--border);
+  padding: 0 0 10px 0;
+}
+
+.project-item details {
+  width: 100%;
+}
+
+.project-item summary {
+  cursor: pointer;
+  color: var(--menu-link-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: 1.04rem;
+  font-weight: 500;
+}
+
+.project-item summary:hover {
+  color: var(--text);
+}
+
+.project-item details p {
+  margin: 10px 0 0 20px;
+}
+
+.project-item details a {
+  color: var(--menu-link-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.project-item details a:hover {
+  color: var(--text);
+}
+
+.project-meta {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 @media (max-width: 760px) {
   .container {
     margin: 12px;
