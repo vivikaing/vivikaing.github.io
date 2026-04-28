@@ -150,13 +150,13 @@ h1 {
 }
 
 .project-item details a {
-  color: var(--menu-link-hover);
+  color: #2563eb;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
 .project-item details a:hover {
-  color: var(--text);
+  color: #1d4ed8;
 }
 
 .project-meta {
